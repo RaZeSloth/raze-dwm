@@ -53,5 +53,10 @@ Configuration
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
 
+<p align="center">
+  <a href="https://github.com/RaZeSloth/raze-dwm"><img src="https://cdn.discordapp.com/attachments/840140272531668992/906267716971794452/unknown.png"></a>
+  <a href="https://github.com/RaZeSloth/raze-dwm"><img src="https://cdn.discordapp.com/attachments/840140272531668992/906268083231010947/unknown.png"></a>
+</p>
+
 [desktop](https://cdn.discordapp.com/attachments/840140272531668992/906267716971794452/unknown.png)
 [desktop1](https://cdn.discordapp.com/attachments/840140272531668992/906268083231010947/unknown.png)
