@@ -43,8 +43,8 @@ super + F9
     evolution
 
 #Spotify
-super + F10
-    spotify
+super + s
+    spotify --force-device-scale-factor=2
 
 #Rofi Fullscreen
 super + F11
