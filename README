@@ -5,11 +5,16 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 
 Requirements
 ------------
-In order to build dwm you need the Xlib header files.
+In order to build dwm you need the Xlib header files. 
 
 
 Installation
 ------------
+Install needed packages
+```
+sudo pacman -S sxhkd
+```
+
 Edit config.mk to match your local setup (dwm is installed into
 the /usr/local namespace by default).
 
@@ -17,6 +22,7 @@ Afterwards enter the following command to build and install dwm (if
 necessary as root):
 
     make clean install
+
 
 
 Running dwm
@@ -46,3 +52,6 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+[desktop](https://cdn.discordapp.com/attachments/840140272531668992/906267716971794452/unknown.png)
+[desktop1](https://cdn.discordapp.com/attachments/840140272531668992/906268083231010947/unknown.png)
