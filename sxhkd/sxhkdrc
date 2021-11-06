@@ -386,8 +386,8 @@ XF86MonBrightnessDown
 
 #Picom Toggle
 ctrl + alt + o
-    ~/.config/arco-dwm/scripts/picom-toggle.sh
+    ~/.config/raze-dwm/scripts/picom-toggle.sh
 
 #Dmenu emoji
 alt + e
-    /home/raze/.config/arco-dwm/scripts/dmenu-emoji.sh list | dmenu -nf "#bbbbbb" -sb "#312281"  -sf "#eeeeee" -p 'Emoji: ' | /home/raze/.config/arco-dwm/scripts/dmenu-emoji.sh copy
+    /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh list | dmenu -nf "#bbbbbb" -sb "#312281"  -sf "#eeeeee" -p 'Emoji: ' | /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh copy
