@@ -86,11 +86,6 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *filecmd[]  = { "thunar", NULL };
 static const char *calendar[]  = { "gsimplecal", NULL };
 static const char *taskmanager[]  = { "xfce4-taskmanager", NULL };
-static const char *brightness_up[]  =   { "cwm-brightness", "up", NULL };
-static const char *brightness_down[]  = { "cwm-brightness", "down", NULL };
-// /home/raze/.config/dmenu-emoji/dmenu-emoji.sh list | dmenu -p 'Emoji: ' | /home/raze/.config/dmenu-emoji/dmenu-emoji.sh copy
-static const char *dmenuemoji[] = { "/home/raze/.config/dmenu-emoji/dmenu-emoji.sh", "list", "|", "dmenu", "-nf", "#bbbbbb", "-sb", "#312281", "-sf", "#eeeeee", "-p", "'Emoji:'", "|", "/home/raze/.config/dmenu-emoji/dmenu-emoji.sh", "copy", NULL };
-// /home/raze/.config/dmenu-emoji/dmenu-emoji.sh list | dmenu -nf "#bbbbbb" -sb "#312281"  -sf "#eeeeee" -p 'Emoji: ' | /home/raze/.config/dmenu-emoji/dmenu-emoji.sh copy
 #include "selfrestart.c"
 #include "shiftview.c"
 
