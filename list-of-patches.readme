@@ -7,3 +7,4 @@ dwm-shiftview
 dwm-fullgaps
 dwm-gridmode (#include "layouts.c" above layouts to work, gaps does not work in this layout)
 dwm-viewontag
+dwm-pertag
