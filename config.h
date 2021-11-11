@@ -13,11 +13,11 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
 static const char *fonts[]          = { "Noto Sans Mono:size=10", "JoyPixels:pixelsize=23:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=11";
-static const char col_gray1[]       = "#6224ac";
+static const char col_gray1[]       = "#97ae50";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#312281"; 
+static const char col_gray3[]       = "#4e5a29";
+static const char col_gray4[]       = "#4e5a29";
+static const char col_cyan[]        = "#dce4c4"; 
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
