@@ -31,7 +31,7 @@ picom -b  --config ~/.config/raze-dwm/picom.conf &
 run "numlockx on"
 run "volumeicon"
 run "flameshot"
-#run "picom"
+#run "picom" &
 run slstatus &
 sxhkd -c ~/.config/raze-dwm/sxhkd/sxhkdrc &
 #run "nitrogen --restore"

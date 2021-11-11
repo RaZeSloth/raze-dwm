@@ -91,7 +91,10 @@ static const char *taskmanager[]  = { "xfce4-taskmanager", NULL };
 #include "shiftview.c"
 
 
+#include "movestack.c"
 static Key keys[] = {
+	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = filecmd } },

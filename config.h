@@ -88,9 +88,11 @@ static const char *calendar[]  = { "gsimplecal", NULL };
 static const char *taskmanager[]  = { "xfce4-taskmanager", NULL };
 #include "selfrestart.c"
 #include "shiftview.c"
-
+#include "movestack.c"
 
 static Key keys[] = {
+	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 /*	{ MODKEY,                       XK_e,      spawn,          {.v = dmenuemoji } }, */
