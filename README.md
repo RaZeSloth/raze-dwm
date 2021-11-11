@@ -54,8 +54,7 @@ The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
 
 <p align="center">
-  <a href="https://github.com/RaZeSloth/raze-dwm"><img src="https://cdn.discordapp.com/attachments/840140272531668992/906267716971794452/unknown.png"></a>
-  <a href="https://github.com/RaZeSloth/raze-dwm"><img src="https://cdn.discordapp.com/attachments/840140272531668992/906268083231010947/unknown.png"></a>
+  <a href="https://github.com/RaZeSloth/raze-dwm"><img src="https://cdn.discordapp.com/attachments/635625917623828520/908376962324656148/catfish.png"></a>
 </p>
 
 ## Please install `libxft-bgra`!
