@@ -371,11 +371,11 @@ XF86AudioStop
 
 #Brightness up
 XF86MonBrightnessUp
-    xbacklight -inc 10
+    xrandr --output eDP-1 --brightness $(xrandr --verbose | awk '/Brightness/ { print $2+0.1; exit }')
 
 #Brightness down
 XF86MonBrightnessDown
-    xbacklight -dec 10
+    xrandr --output eDP-1 --brightness $(xrandr --verbose | awk '/Brightness/ { print $2-0.1; exit }')
 
 
 #################################################################
