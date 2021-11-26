@@ -369,12 +369,12 @@ XF86AudioStop
     playerctl stop
 
 #Brightness up
-XF86MonBrightnessUp
-    xrandr --output eDP-1 --brightness $(xrandr --verbose | awk '/Brightness/ { print $2+0.1; exit }')
+#XF86MonBrightnessUp
+#    xrandr --output eDP-1 --brightness $(xrandr --verbose | awk '/Brightness/ { print $2+0.1; exit }')
 
 #Brightness down
-XF86MonBrightnessDown
-    xrandr --output eDP-1 --brightness $(xrandr --verbose | awk '/Brightness/ { print $2-0.1; exit }')
+#XF86MonBrightnessDown
+#    xrandr --output eDP-1 --brightness $(xrandr --verbose | awk '/Brightness/ { print $2-0.1; exit }')
 
 
 #################################################################
