@@ -393,4 +393,4 @@ ctrl + alt + o
 
 #Dmenu emoji
 alt + e
-    /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh list | dmenu -h 40 -nf "#bbbbbb" -sb "#312281"  -sf "#eeeeee" -p 'Emoji: ' | /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh copy
+    /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh list | dmenu -h 40 -nf "#bbbbbb" -sb "#3b4252"  -sf "#eeeeee" -p 'Emoji: ' | /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh copy
