@@ -28,6 +28,7 @@ run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 # picom -b  --config ~/.config/raze-dwm/picom.conf &
+xinput set-prop 10 'libinput Accel Speed' -0.45
 run "numlockx on"
 run "volumeicon"
 run "flameshot"
