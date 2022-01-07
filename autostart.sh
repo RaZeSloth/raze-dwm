@@ -32,6 +32,7 @@ xinput set-prop 10 'libinput Accel Speed' -0.45
 run "numlockx on"
 run "volumeicon"
 run "flameshot"
+run volnoti &
 #run "picom" &
 run slstatus &
 sxhkd -c ~/.config/raze-dwm/sxhkd/sxhkdrc &
