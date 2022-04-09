@@ -17,7 +17,7 @@ function run {
 #autorandr horizontal
 #run xrandr --output eDP-1 --mode 1920x1440 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off
 #run xrandr --output eDP-1 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off
-run xrandr --output eDP-1 --scale 1.25x1.25 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off
+run xrandr --output eDP1 --scale 1.25x1.25 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP1 --off --output DP2 --off
 # CUR BRIGHTNESS:  xrandr --verbose | awk '/Brightness/ { print $2; exit }'
 # SET BRIGHTNESS: xrandr --output eDP-1 --brightness NUMBER
 run "nm-applet"
