@@ -34,6 +34,7 @@ run "flameshot"
 run volnoti &
 #run "picom" &
 run slstatus &
+run clipcatd
 sxhkd -c ~/.config/raze-dwm/sxhkd/sxhkdrc &
 #run "nitrogen --restore"
 ~/.fehbg
