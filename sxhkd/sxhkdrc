@@ -60,20 +60,13 @@ super + F12
 #################################################################
 # SUPER + ... KEYS
 #################################################################
-
-#Atom
-super + e
-    atom
-
-#Browser
-super + w
-    vivaldi-stable
-
 #Conky-toggle
 super + c
     conky-toggle
 
-#Htop
+super + g
+     google-chrome-stable
+
 #super + h
 #    urxvt 'htop task manager' -e htop
 
@@ -82,8 +75,9 @@ super + x
     archlinux-logout
 
 #Rofi theme selector
-super + r
-    rofi-theme-selector
+#super + r
+#    rofi-theme-selector
+
 
 #Urxvt
 #super + t
@@ -98,8 +92,8 @@ super + v
 #    pragha
 
 #urxvt
-alt + Return
-    alacritty
+super + Return
+    kitty
 
 #Xkill
 super + Escape
@@ -109,6 +103,8 @@ super + Escape
 #urxvt
 super + KP_Enter
 	urxvt
+super + z
+    boomer
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -392,5 +388,9 @@ ctrl + alt + o
     ~/.config/raze-dwm/scripts/picom-toggle.sh
 
 #Dmenu emoji
-alt + e
-    /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh list | dmenu -h 40 -nf "#bbbbbb" -sb "#3b4252"  -sf "#eeeeee" -p 'Emoji: ' | /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh copy
+super + e
+    /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh list | dmenu -h 40 -nf "#282828" -sb "#504945"  -sf "#bdae93" -p 'Emoji: ' | /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh copy
+
+#Lock screen
+XF86ScreenSaver
+    betterlockscreen -l

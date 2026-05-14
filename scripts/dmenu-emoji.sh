@@ -12,7 +12,7 @@ case "$1" in
     if [ ! -z "$input" ]; then
       emoji=${input: -1}
       echo -n "$emoji" | xclip -selection c
-      command -v notify-send > /dev/null && notify-send -t 200 "$emoji copied!"
+      command -v notify-send > /dev/null && notify-send -t 3000 "$emoji copied!"
     fi
     ;;
   "")
