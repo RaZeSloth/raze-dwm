@@ -9,3 +9,4 @@ dwm-gridmode (#include "layouts.c" above layouts to work, gaps does not work in 
 dwm-viewontag
 dwm-pertag
 dwm-movestack
+dwm-preserveonrestart

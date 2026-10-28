@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * Magically finds the current's executable path
@@ -44,6 +45,11 @@ char *get_dwm_path(){
     }while(r >= length);
 
     path[r] = '\0';
+
+    /* after `make install` replaces the running binary the link ends in " (deleted)" */
+    if(r > 10 && strcmp(path + r - 10, " (deleted)") == 0){
+        path[r - 10] = '\0';
+    }
 
     return path;
 }
