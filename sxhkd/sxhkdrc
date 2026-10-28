@@ -385,11 +385,11 @@ ctrl + alt + o
 
 #Dmenu emoji
 super + e
-    /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh list | dmenu -h 40 -nf "#282828" -sb "#504945"  -sf "#bdae93" -p 'Emoji: ' | /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh copy
+    /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh list | dmenu -l 20 -h 40 -nb "#282828" -nf "#bdae93" -sb "#bdae93" -sf "#ebdbb2" -p 'Emoji: ' | /home/raze/.config/raze-dwm/scripts/dmenu-emoji.sh copy
 
 #Clipcat clipboard menu
 super + v
-    clipcatctl list | dmenu -l 20 -h 40 -nb "#282828" -nf "#bdae93" -sb "#bdae93" -sf "#ebdbb2" -p 'Clipboard: ' | cut -d: -f1 | xargs -r clipcatctl promote
+    clipcat-menu --finder=dmenu insert
 
 #Clipcat clear history
 super + shift + v

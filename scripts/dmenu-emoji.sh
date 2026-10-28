@@ -10,7 +10,7 @@ case "$1" in
   "copy")
     input=$(tee)
     if [ ! -z "$input" ]; then
-      emoji=${input: -1}
+      emoji=$(printf '%s' "$input" | sed 's/.*[[:space:]]\{2,\}//')
       echo -n "$emoji" | xclip -selection c
       command -v notify-send > /dev/null && notify-send -t 3000 "$emoji copied!"
     fi
@@ -23,6 +23,38 @@ esac
 exit
 
 __DATA__
+shrug                                           ¯\_(ツ)_/¯
+flip table                                      (╯°□°)╯︵ ┻━┻
+unflip table                                    ┬─┬ノ( º _ ºノ)
+lenny                                           ( ͡° ͜ʖ ͡°)
+disapproval                                     ಠ_ಠ
+crying kao                                      (╥﹏╥)
+joy kao                                         (ノ◕ヮ◕)ノ*:･ﾟ✧
+wink kao                                        ;)
+kiss kao                                        ( ˘ ³˘)♥
+dance kao                                       ┏(・o･)┛♪
+bear kao                                        ʕ•ᴥ•ʔ
+cat kao                                         (=^･ω･^=)
+confused kao                                    (・_・ヾ
+shocked kao                                     (°o°)
+happy kao                                       (◕‿◕)
+sleeping kao                                    (-_-) zzZ
+angry kao                                       (¬_¬")
+excited kao                                     \(^o^)/
+hug kao                                         (づ｡◕‿‿◕｡)づ
+bear hug kao                                    (つ◉益◉)つ
+magic kao                                       (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+look of disapproval                             ಠ╭╮ಠ
+why kao                                         щ(゜ロ゜щ)
+table back                                      ┬─┬﻿ ノ( ゜-゜ノ)
+puppy eyes                                      (◕‿◕✿)
+embarrassed                                     (⁄ ⁄•⁄ω⁄•⁄ ⁄)
+sparkle kao                                     ✧･ﾟ: *✧･ﾟ:*
+thumbs up kao                                   (b ᵔᴥᵔ)b
+middle finger kao                               t(-_-t)
+glasses kao                                     (⌐■_■)
+deal with it                                    (⌐■_■)
+oh well                                         ¯\_(⊙_ʖ⊙)_/¯
 grinning face                                   😀
 grinning face with big eyes                     😃
 grinning face with smiling eyes                 😄
