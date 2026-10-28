@@ -17,7 +17,12 @@ function run {
 #autorandr horizontal
 #run xrandr --output eDP-1 --mode 1920x1440 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off
 #run xrandr --output eDP-1 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off
-run xrandr --output eDP1 --scale 1.4x1.4 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output DP2 --off
+# GDM starts a fresh Xorg at login, so wait until eDP1's modes are probed
+for i in $(seq 20); do
+  xrandr | grep -q '^ *1920x1080 ' && break
+  sleep 0.25
+done
+xrandr --output eDP1 --scale 1.4x1.4 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output DP2 --off
 # CUR BRIGHTNESS:  xrandr --verbose | awk '/Brightness/ { print $2; exit }'
 # SET BRIGHTNESS: xrandr --output eDP-1 --brightness NUMBER
 run "nm-applet"
