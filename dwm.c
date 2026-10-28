@@ -2625,6 +2625,7 @@ view(const Arg *arg)
 {
 	int i;
 	unsigned int tmptag;
+	Client *c;
 
 	if ((arg->ui & TAGMASK) == selmon->tagset[selmon->seltags])
 		return;
@@ -2654,7 +2655,9 @@ view(const Arg *arg)
 	if (selmon->showbar != selmon->pertag->showbars[selmon->pertag->curtag])
 		togglebar(NULL);
 
-	focus(NULL);
+	/* prefer a non-sticky window; focus(NULL) falls back to a sticky one */
+	for (c = selmon->stack; c && (!ISVISIBLE(c) || c->issticky); c = c->snext);
+	focus(c);
 	arrange(selmon);
 }
 
